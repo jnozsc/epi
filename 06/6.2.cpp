@@ -1,6 +1,6 @@
 template <typename ValueType, size_t N>
 class Arrary {
-public:
+  public:
     bool read(size_t i, ValueType* v) const {
         if (isValid(i)) {
             *v = A_[i];
@@ -17,7 +17,7 @@ public:
         A_[i] = v;
     }
 
-private:
+  private:
     bool isVlid(size_t i) const {
         return 0 <= P_[i] && P_[i] < t_ && S_[P_[i]] == i;
     }
